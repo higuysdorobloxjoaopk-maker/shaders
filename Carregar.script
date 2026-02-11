@@ -1,0 +1,42 @@
+local StarterGui = game:GetService("StarterGui")
+
+StarterGui:SetCore("SendNotification", {
+	Title = "shaders by luay(joaopk)",
+	Text = "aproveite o shaders e de uma olhada em mais scripts mais tarde!",
+	Duration = 5
+})
+
+task.wait(5)
+loadstring(game:HttpGet("link1"))()
+
+StarterGui:SetCore("SendNotification", {
+	Title = "carregando...",
+	Text = "shaders, 1/3",
+	Duration = 5
+})
+
+task.wait(1)
+loadstring(game:HttpGet("link2"))()
+
+StarterGui:SetCore("SendNotification", {
+	Title = "carregando...",
+	Text = "emotes, 2/3",
+	Duration = 5
+})
+
+task.wait(1)
+loadstring(game:HttpGet("link3"))()
+
+StarterGui:SetCore("SendNotification", {
+	Title = "carregando...",
+	Text = "anti-fling, 3/3",
+	Duration = 5
+})
+
+task.wait(1)
+
+StarterGui:SetCore("SendNotification", {
+	Title = "pronto!",
+	Text = "aproveite os shaders e muito mais!",
+	Duration = 5
+})
