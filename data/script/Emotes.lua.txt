@@ -16,7 +16,7 @@ if _G.EmotesGUIRunning then
 end
 _G.EmotesGUIRunning = true
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Menu-7yd7/refs/heads/Script/GUIS/Off-site/Notify.lua"))()
+loadstring(game:HttpGet("0"))()
 
 local HttpService = game:GetService("HttpService")
 local RunService = game:GetService("RunService")
