@@ -6,7 +6,7 @@ StarterGui:SetCore("SendNotification", {
 	Duration = 5
 })
 
-task.wait(5)
+task.wait(1)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Shaders.luau"))()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
