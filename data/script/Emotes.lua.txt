@@ -3556,3 +3556,8 @@ if UserInputService.KeyboardEnabled then
         Duration = 10
     })
 end
+
+StarterGui:SetCore("SendNotification", {
+	Title = "thanks for emotes",
+	Text = "emotes by 7yd7",
+	Duration = 5
