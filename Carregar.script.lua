@@ -7,8 +7,22 @@ StarterGui:SetCore("SendNotification", {
 })
 
 task.wait(1)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Shaders.luau"))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua"))()
+local function SafeLoad(url, name)
+	local success, err = pcall(function()
+		loadstring(game:HttpGet(url))()
+	end)
+	if success then
+		warn("✔ Carregado:", name)
+	else
+		warn("✖ Erro ao carregar:", name, err)
+	end
+end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Part%20control.luau"))()
+SafeLoad("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Shaders.luau", "Shaders")
+task.wait(1)
+
+SafeLoad("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua", "Emotes GUI")
+task.wait(1)
+
+SafeLoad("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Part%20control.luau", "Control parts")
