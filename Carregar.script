@@ -7,7 +7,7 @@ StarterGui:SetCore("SendNotification", {
 })
 
 task.wait(5)
-loadstring(game:HttpGet("link1"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Shaders.luau"))()
 
 StarterGui:SetCore("SendNotification", {
 	Title = "carregando...",
@@ -16,7 +16,7 @@ StarterGui:SetCore("SendNotification", {
 })
 
 task.wait(1)
-loadstring(game:HttpGet("link2"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Emotes.lua.txt"))()
 
 StarterGui:SetCore("SendNotification", {
 	Title = "carregando...",
@@ -25,7 +25,7 @@ StarterGui:SetCore("SendNotification", {
 })
 
 task.wait(1)
-loadstring(game:HttpGet("link3"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/ant-fling.lua"))()
 
 StarterGui:SetCore("SendNotification", {
 	Title = "carregando...",
