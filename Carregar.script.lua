@@ -1,3 +1,4 @@
+-- made by joaopk
 local StarterGui = game:GetService("StarterGui")
 
 StarterGui:SetCore("SendNotification", {
@@ -19,7 +20,7 @@ local function SafeLoad(url, name)
 	end
 end
 
-SafeLoad("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/Shaders.luau", "Shaders")
+SafeLoad("https://raw.githubusercontent.com/higuysdorobloxjoaopk-maker/shaders/refs/heads/main/data/script/ShadersV2.luau", "Shaders")
 task.wait(1)
 
 SafeLoad("https://raw.githubusercontent.com/7yd7/Hub/refs/heads/Branch/GUIS/Emotes.lua", "Emotes GUI")
